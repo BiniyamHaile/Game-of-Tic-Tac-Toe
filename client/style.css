@@ -1,0 +1,62 @@
+
+.cell {
+    box-shadow : 0 0 0 3px;
+    width :5rem;
+    height : 5rem;
+    border : 2px solid lightslategray;
+    font-size: 3rem;
+    text-align: center;
+    cursor : pointer;
+
+}
+#gameContainer {
+    font-family:  "Permanent Marker" , cursive;
+    text-align : center;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    width : 248px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+   
+}
+
+#result{
+    background-color: cadetblue;
+    position: absolute;
+    width : 250px;
+    height: 100%;
+    top : 0 ; 
+    left : 0;
+    transition: 0.3s all ease-in-out;
+    display: none;
+   
+}
+
+#restart{
+    position: relative;
+    padding  :9px;
+    font-size: 1.3rem;
+   
+
+}
+#winner{
+    font-size: 1.3rem;
+}
+
+.contain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#statusText{
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link href="style.css" rel = "stylesheet" type="text/css">
+</head>
+<body>
+    <div id ="gameContainer">
+        <h1>Tic Tac Toe </h1>
+        <h1 id = "condition">Waiting for a user to connect...</h1>
+        <h1 id = 'message'></h1>
+        <div id = "cellContainer">
+            <div idx = "0" class = "cell"></div>
+            <div idx = "1" class = "cell"></div>
+            <div idx = "2" class = "cell"></div>
+            <div idx = "3" class = "cell"></div>
+            <div idx = "4" class = "cell"></div>
+            <div idx = "5" class = "cell"></div>
+            <div idx = "6" class = "cell"></div>
+            <div idx = "7" class = "cell"></div>
+            <div idx = "8" class = "cell"></div>
+
+            <div id = "result">
+               <div class = "contain">
+                <p id = "winner"></p>
+                <button id = "restart" > Restart? </button>  
+               </div>  
+            </div>
+
+
+        </div>
+        <h2 id = "statusText">  </h2>
+       <div id = "xwon"></div>
+       <div id = "owon"></div>
+       <div id = "draw"></div>
+            </div>
+    
+
+            <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+
+    <script src ="index.js"></script>
+</body>
+</html>
